@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sza Biblioteca</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="coleção.html">Coleçao</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!----------------------detalhes do produto-------->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <a href="coleção.html"><img src="https://m.media-amazon.com/images/I/516VOgxwg2L._SR480,440_.jpg"></a>
+
+            </div>
+            <div class="col-2">
+                <p>Livro</p>
+                <h1>A garota e o Lago</h1>
+                <h3>Summit Lake, uma pequena cidade entre montanhas, é esse tipo de lugar, bucólico e com encantadoras casas dispostas à beira de um longo trecho de água intocada.Duas semanas atrás, a estudante de direito Becca Eckersley foi brutalmente assassinada em uma dessas casas. Filha de um poderoso advogado, Becca estava no auge de sua vida. Atraída instintivamente pela notícia, a repórter Kelsey Castle vai até a cidade para investigar o caso. ...E LOGO SE ESTABELECE UMA CONEXÃO ÍNTIMA QUANDO UM VIVO CAMINHA NAS MESMAS PEGADAS DOS MORTOS...E enquanto descobre sobre as amizades de Becca, sua vida amorosa e os segredos que ela guardava, a repórter fica cada vez mais convencida de que a verdade sobre o que aconteceu com Becca pode ser a chave para superar as marcas sombrias de seu próprio passado.</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------Redes sociais---------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Sza Biblioteca 2024</p>
+        </div>
+    </div>
+
+    <!-------------------------js------------------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else
+
+            {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+
+
+        }
+    </script>
+
+
+    <!----------------------js produtos ------------------->
+
+
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+        }
+
+
+        SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+        }
+
+
+        SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+        }
+
+        SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+
+</body>
+
+</html>

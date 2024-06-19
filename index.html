@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sza Biblioteca</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="coleção.html">Coleção</a></li>
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Livros em Cartaz</h1>
+                    <a href="coleção.html" class="btn">Coleção</a>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------- produtos em destaque ------------------->
+    <div class="small-container">
+        <h2 class="title">Livros em Destaques</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="detlivro.html"><img src="https://m.media-amazon.com/images/I/516VOgxwg2L._SR480,440_.jpg"></a>
+                    <h4>A Garota e o Lago</h4>
+                </a>
+            </div> 
+
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/41htlT5B29S._SR480,440_.jpg">
+                <h4>Psicologia Financeira</h4>
+            </div>
+
+            <div class="col-4"> 
+                <img src="https://m.media-amazon.com/images/I/51NM69fY3kL._SR480,440_.jpg">
+                <h4>Amor(es) Verdadeiro(s)</h4>
+            </div> 
+
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/41jXtkfq49L._SR480,440_.jpg">
+                <h4>Pessoais Normais</h4>
+            </div>
+        </div>
+    </div>
+
+        <h2 class="title">Outro Livros</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/51SaMGcNbEL._SR480,440_.jpg">
+                <h4>Persuação</h4>
+            </div>
+
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/51zZX-kuSsL._SR480,440_.jpg">
+                <h4>É assim que começa</h4>
+            </div>
+
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/41oZEOsAjTL._SR480,440_.jpg">
+                <h4>Nem te conto</h4>
+            </div>
+
+            <div class="col-4">
+                <img src="https://m.media-amazon.com/images/I/31+TPtyTWcL._SR480,440_.jpg">
+                <h4>Impostora</h4>
+            </div>
+    </div>
+
+
+
+    <!--------------------------------------rede sociais---------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Sza Biblioteca</p>
+        </div>
+    </div>
+
+    <!-------------------------codigo em js------------------>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems")
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else
+
+            {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
